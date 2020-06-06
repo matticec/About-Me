@@ -6,47 +6,143 @@
     <title>Personal Website</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <style>
-        header{
-            text-align: right;
-            color:orange;
-            background-image: url(https://i.pinimg.com/474x/ab/53/98/ab5398cf5eee70433c1fe2cd7ff299e7--computer-programming-computers.jpg);
-            background-position: fixed;
-            background-repeat: no-repeat;
-            background-size: 100% 300%;
+      * {
+        box-sizing: border-box;
+      }
+      
+      /* Style the body */
+      body {
+        font-family: Arial;
+        margin: 5px;
+      }
+      
+      /* Header/logo Title */
+      .header {
+        padding: 60px;
+        text-align: center;
+        background-image: url(https://www.computersciencedegreehub.com/wp-content/uploads/2016/02/what-is-coding-1024x683.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 300px;
+        color:white;
+      }
+      
+      /* Style the top navigation bar */
+      .navbar {
+        display: flex;
+        background-color: rgb(51, 51, 51);
+      }
+      
+      /* Style the navigation bar links */
+      .navbar a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+      
+      /* Change color on hover */
+      .navbar a:hover {
+        background-color: rgb(255, 255, 255);
+        color: black;
+      }
+      
+      /* Column container */
+      .row {  
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      /* Create two unequal columns that sits next to each other */
+      /* Sidebar/left column */
+      .side {
+        flex: 30%;
+        background-color: #f1f1f1;
+        padding: 20px;
+      }
+      
+      /* Main column */
+      .main {
+        flex: 70%;
+        background-color: white;
+        padding: 20px;
+      }
+      
+      /* Fake image, just for this example */
+      .img {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+      }
+      
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+      }
+      
+      /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 700px) {
+        .row, .navbar {   
+          flex-direction: column;
         }
-        
-        }
+      }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Clayton Mattice</h1>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">          
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About Me</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Projects</a>
-                </ul>
-            </div>
-          </nav>
-    </header>
-    <div class="container">
-      <div class="row row-cols-2">
-        <div class="col">Column</div>
-        <div class="col">Column</div>
-        <div class="col">Column</div>
-        <div class="col">Column</div>
+      
+      <!-- Header -->
+      <div class="header">
+        <h1>Clayton Mattice</h1> 
       </div>
-    </div>
+      
+      <!-- Navigation Bar -->
+      <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About Me</a>
+        <a href="#">Projects</a>
+      </div>
+      
+      
+      <div class="row">
+        <!-- The Side bar with content -->
+        <div class="side">
+          <h2>Whats New</h2>
+          <h5>Photo of project:</h5>
+          <div>
+            <img class="img" style="height:300px;" src="C:\Users\Home\Desktop\About-Me\FB_IMG_1591232016454.jpg" alt="picture of me">
+          </div>
+          <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+          <h3>Current News</h3>
+          <p>Lorem ipsum dolor sit ame.</p>
+          <div class="img" style="height:60px;">Image</div><br>
+          <div class="img" style="height:60px;">Image</div><br>
+          <div class="img" style="height:60px;">Image</div>
+        </div>
+        <!-- The main body with content -->
+        <div class="main">
+          <h2>TITLE HEADING</h2>
+          <h5>Title description, Dec 7, 2017</h5>
+          <div class="img" style="height:200px;">Image</div>
+          <p>Some text..</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <br>
+          <h2>TITLE HEADING</h2>
+          <h5>Title description, Sep 2, 2017</h5>
+          <div class="img" style="height:200px;">Image</div>
+          <p>Some text..</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+      </div>
+      
+      <!-- Footer -->
+      <div class="footer">
+        <h2>Footer</h2>
+      </div>
+
+
+  </head>
+<body>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
