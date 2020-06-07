@@ -5,126 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project page</title>
     <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@700&display=swap" rel="stylesheet">
-    
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      
-      /* Style the body */
-      body {
-        font-family: 'News Cycle', sans-serif;
-        margin: 5px;
-      }
-      
-      /* Header/logo Title */
-      .header {
-        padding: 60px;
-        text-align: center;
-        background-image: url(https://www.computersciencedegreehub.com/wp-content/uploads/2016/02/what-is-coding-1024x683.jpg);
-        background-repeat: no-repeat;
-        background-size: 80% 300px;
-        color: black;
-        text-align: right;
-        background-color: yellowgreen;
-        
-      }
-      
-      /* Style the top navigation bar */
-      .navbar {
-        display: flex;
-        background-color: rgb(170, 170, 170);
-      }
-      
-      /* Style the navigation bar links */
-      .navbar a {
-        color: white;
-        padding: 14px 20px;
-        text-align: center;
-      }
-      
-      /* Change color on hover */
-      .navbar a:hover {
-        background-color: rgb(255, 255, 255);
-        color: black;
-      }
-      
-      /* Column container */
-      .row {  
-        display: flex;
-        flex-wrap: wrap;
-      }
-      
-      /* Create two unequal columns that sits next to each other */
-      /* Sidebar/left column */
-      .side {
-        
-        background-color: #f1f1f1;
-        padding: 20px;
-        flex-basis: 30%;
-      }
-      
-      /* Main column */
-      .main {
-        flex: 70%;
-        background-color: white;
-        padding: 20px;
-      }
-      
-      /* Fake image, just for this example */
-      .left-content{
-        display: flex;
-        flex-flow: row;
-        flex-basis: calc(100% - 200px);
-        background-color: rgb(170, 170, 170);
-        /* width: 100%; */
-        padding: 20px;
-      }
-      .bullit-img{
-        width: 15%;
-      }
-      .right-container-back{
-        background-color: rgb(170, 170, 170);
-        width: 100%;
-        padding: 20px;
-      }
-      
-      /* Footer */
-      .footer {
-        padding: 20px;
-        text-align: right;
-        background-image: url(https://www.computersciencedegreehub.com/wp-content/uploads/2016/02/what-is-coding-1024x683.jpg);
-        background-repeat: no-repeat;
-        background-size: 80% 300px;
-        color: black;
-        background-color: yellowgreen;
-      }
-      
-      /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-      @media screen and (max-width: 700px) {
-        .row, .navbar {   
-          flex-direction: column;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-      
       <!-- Header -->
       <div class="header">
         <h1>Clayton Mattice</h1> 
       </div>
-      
       <!-- Navigation Bar -->
       <div class="navbar">
         <a href="index.html" target="_blank">Home</a>
         <a href="Projects.html" target="_blank">Projects</a>
         <a href="about-me.html" target="_blank">About Me</a>
       </div>
-      
-      
+      <!-- Parent Flex container -->
       <div class="row">
-        <!-- The Side bar with content -->
+        <!-- The Left Side bar with content -->
         <div class="side">
           <h2>Projects</h2>
           <div class="left-content">
@@ -168,7 +64,6 @@
             <p> Projet Name:</p>
           </div><br>
         </div>
-
         <!-- The main body with content -->
         <div class="main">
           <h2>TITLE HEADING</h2>

@@ -5,112 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me page</title>
     <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@700&display=swap" rel="stylesheet">
-    
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      
-      /* Style the body */
-      body {
-        font-family: 'News Cycle', sans-serif;
-        margin: 5px;
-      }
-      
-      /* Header/logo Title */
-      .header {
-        padding: 60px;
-        text-align: center;
-        background-image: url(https://www.computersciencedegreehub.com/wp-content/uploads/2016/02/what-is-coding-1024x683.jpg);
-        background-repeat: no-repeat;
-        background-size: 80% 300px;
-        color: black;
-        text-align: right;
-        background-color: yellowgreen;
-        
-      }
-      
-      /* Style the top navigation bar */
-      .navbar {
-        display: flex;
-        background-color: rgb(170, 170, 170);
-      }
-      
-      /* Style the navigation bar links */
-      .navbar a {
-        color: white;
-        padding: 14px 20px;
-        text-align: center;
-      }
-      
-      /* Change color on hover */
-      .navbar a:hover {
-        background-color: rgb(255, 255, 255);
-        color: black;
-      }
-      
-      /* Column container */
-      .row {  
-        display: flex;
-        flex-wrap: wrap;
-      }
-      
-      /* Create two unequal columns that sits next to each other */
-      /* Sidebar/left column */
-      .side {
-        background-color: #f1f1f1;
-        padding: 20px;
-        flex-basis: 30%;
-      }
-      
-      /* Main column */
-      .main {
-        flex: 70%;
-        background-color: white;
-        padding: 20px;
-      }
-      
-      /* background for containers right and left */
-      .right-container-back{
-        background-color: rgb(170, 170, 170);
-        width: 100%;
-        padding: 20px;
-      }
-      .left-content{
-        display: flex;
-        flex-flow: row;
-        flex-basis: calc(100% - 200px);
-        background-color: rgb(170, 170, 170);
-        /* width: 100%; */
-        padding: 20px;
-      }
-      .bullit-img{
-        width: 15%;
-      }
-      
-      /* Footer */
-      .footer {
-        padding: 20px;
-        text-align: right;
-        background-image: url(https://www.computersciencedegreehub.com/wp-content/uploads/2016/02/what-is-coding-1024x683.jpg);
-        background-repeat: no-repeat;
-        background-size: 80% 300px;
-        color: black;
-        background-color: yellowgreen;
-      }
-      textarea{
-          resize: none;
-          width: 100%;
-          height: 300px;
-      }
-      
-      /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-      @media screen and (max-width: 700px) {
-        .row, .navbar {   
-          flex-direction: column;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
       
@@ -126,7 +21,7 @@
         <a href="about-me.html" target="_blank">About Me</a>
       </div>
       
-      
+    <!-- Parent Container -->
       <div class="row">
         <!-- The Side bar with content -->
         <div class="side">
@@ -154,32 +49,42 @@
 
         <!-- The main body with content -->
         <div class="main">
-        <h2>ABOUT ME</h2>
-        <div class="right-container-back">
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-        </p><br>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-        </p><br>
-        </div>
-        <h2>REACH OUT</h2>
-        <div class="right-container-back">
-        <form>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" value="Doe"><br><br>
-        <textarea name="message"></textarea>
-        <input type="submit" value="Submit">
-        </form>
-        </div>
+            <h2>ABOUT ME</h2>
+            <div class="right-container-back">
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                 dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p><br>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p><br>
+            </div>
+                <h2>REACH OUT</h2>
+            <div class="right-container-back">
+                <form>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="John"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Doe"><br>
+                    <label for="Email">Email address</label><br>
+                    <input type="email" id="Email" name="Email" value="example@email.com"><br><br>
+                    <label for="message">Commet Section</label>
+                    <textarea name="message"></textarea><br>
+        <!-- Radio buttons -->
+                    <p>Reason for reaching out</p>
+                    <input type="radio" id="question" name="reaching" value="question">
+                    <label for="male">Question</label><br>
+                    <input type="radio" id="request" name="reaching" value="request">
+                    <label for="female">Request</label><br>
+                    <input type="radio" id="other" name="reaching" value="other">
+                    <label for="other">Other</label><br>
+        <!-- submit -->
+                    <input type="submit" value="Submit">
+                    </form>
+            </div>
         </div>
       </div>
-
-      
     <footer>
         <div class="footer">
           <h2>Contact Information:</h2>
