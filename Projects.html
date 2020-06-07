@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
+    <title>Project page</title>
     <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@700&display=swap" rel="stylesheet">
     
     <style>
@@ -72,7 +72,18 @@
       }
       
       /* Fake image, just for this example */
-      .img {
+      .left-content{
+        display: flex;
+        flex-flow: row;
+        flex-basis: calc(100% - 200px);
+        background-color: rgb(170, 170, 170);
+        /* width: 100%; */
+        padding: 20px;
+      }
+      .bullit-img{
+        width: 15%;
+      }
+      .right-container-back{
         background-color: rgb(170, 170, 170);
         width: 100%;
         padding: 20px;
@@ -106,62 +117,84 @@
       
       <!-- Navigation Bar -->
       <div class="navbar">
-        <a href="#">Home</a>
-        <a href="#">Projects</a>
-        <a href="#">About Me</a>
+        <a href="index.html" target="_blank">Home</a>
+        <a href="Projects.html" target="_blank">Projects</a>
+        <a href="about-me.html" target="_blank">About Me</a>
       </div>
       
       
       <div class="row">
         <!-- The Side bar with content -->
         <div class="side">
-          <h2>Project of the Month</h2>
-          <h5>Photo of project:</h5>
-          <div>
-            <img class="img" style="height:30%" src="https://image.freepik.com/free-vector/light-blue-project-management-concept_23-2147782704.jpg" alt="icon of project">
-          </div>
-          <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-          <h3>Social Media</h3>
-          <p>Follow me on social media.</p>
-          <div> 
-            <img src="https://image.flaticon.com/icons/svg/174/174855.svg" alt="icon" class="img">
+          <h2>Projects</h2>
+          <div class="left-content">
+            <img class="bullit-img" src="https://cdn4.iconfinder.com/data/icons/seo-web-9/48/code_language_coding_development_application_project-512.png" alt="code project icon">
+            <p> Projet Name:</p>
           </div><br>
-          <div> 
-            <img src="https://image.flaticon.com/icons/png/512/21/21601.png" alt="News icon" class="img">
+          <div class="left-content">
+            <img class="bullit-img" src="https://cdn4.iconfinder.com/data/icons/seo-web-9/48/code_language_coding_development_application_project-512.png" alt="code project icon">
+            <p> Projet Name:</p>
           </div><br>
-          <div>
-            <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" alt="github icon" class="img">
-          </div>
-          <div><br>
-            <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" alt="github icon" class="img">
-          </div>
+          <div class="left-content">
+            <img class="bullit-img" src="https://cdn4.iconfinder.com/data/icons/seo-web-9/48/code_language_coding_development_application_project-512.png" alt="code project icon">
+            <p> Projet Name:</p>
+          </div><br>
+          <div class="left-content">
+              <img class="bullit-img" src="https://cdn4.iconfinder.com/data/icons/seo-web-9/48/code_language_coding_development_application_project-512.png" alt="code project icon">
+            <p> Projet Name:</p>
+          </div><br>
+          <div class="left-content">
+              <img class="bullit-img" src="https://cdn4.iconfinder.com/data/icons/seo-web-9/48/code_language_coding_development_application_project-512.png" alt="code project icon">
+            <p> Projet Name:</p>
+          </div><br>
+          <div class="left-content">
+              <img class="bullit-img" src="https://cdn4.iconfinder.com/data/icons/seo-web-9/48/code_language_coding_development_application_project-512.png" alt="code project icon">
+            <p> Projet Name:</p>
+          </div><br>
+          <div class="left-content">
+              <img class="bullit-img" src="https://cdn4.iconfinder.com/data/icons/seo-web-9/48/code_language_coding_development_application_project-512.png" alt="code project icon">
+            <p> Projet Name:</p>
+          </div><br>
+          <div class="left-content">
+              <img class="bullit-img" src="https://cdn4.iconfinder.com/data/icons/seo-web-9/48/code_language_coding_development_application_project-512.png" alt="code project icon">
+            <p> Projet Name:</p>
+          </div><br>
+          <div class="left-content">
+              <img class="bullit-img" src="https://cdn4.iconfinder.com/data/icons/seo-web-9/48/code_language_coding_development_application_project-512.png" alt="code project icon">
+            <p> Projet Name:</p>
+          </div><br>
+          <div class="left-content">
+              <img class="bullit-img" src="https://cdn4.iconfinder.com/data/icons/seo-web-9/48/code_language_coding_development_application_project-512.png" alt="code project icon">
+            <p> Projet Name:</p>
+          </div><br>
         </div>
+
         <!-- The main body with content -->
         <div class="main">
           <h2>TITLE HEADING</h2>
-          <h5>Title description, Dec 7, 2017</h5>
-          <div class="img" style="height:200px;">Image</div>
+          <h5>Title description:</h5>
+          <div class="right-container-back" style="height:200px;">Image</div>
           <p>Some text..</p>
           <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
           <br>
           <h2>TITLE HEADING</h2>
-          <h5>Title description, Sep 2, 2017</h5>
-          <div class="img" style="height:200px;">Image</div>
+          <h5>Title description:</h5>
+          <div class="right-container-back" style="height:200px;">Image</div>
           <p>Some text..</p>
           <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-          <div class="img" style="height:200px;">Image</div>
+          <div class="right-container-back" style="height:200px;">Image</div>
           <p>Some text..</p>
           <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>        
-          <div class="img" style="height:200px;">Image</div>
+          <div class="right-container-back" style="height:200px;">Image</div>
           <p>Some text..</p>
           <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-          <div class="img" style="height:200px;">Image</div>
+          <div class="right-container-back" style="height:200px;">Image</div>
           <p>Some text..</p>
           <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
           <br>
           <h2>TITLE HEADING</h2>
-          <h5>Title description, Dec 7, 2017</h5>
-          <div class="img" style="height:200px;">Image</div>
+          <h5>Title description:</h5>
+          <div class="right-container-back" style="height:200px;">Image</div>
           <p>Some text..</p>
           <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
           <br>
