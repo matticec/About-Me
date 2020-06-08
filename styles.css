@@ -8,17 +8,16 @@
     margin: 5px;
   }
   
-  /* Header/logo Title */
-  .header {
-    padding: 60px;
-    text-align: center;
+  /* Header & Footer logo Title */
+  .header, .footer{
+    padding: 20px;
+    text-align: right;
     background-image: url(https://www.computersciencedegreehub.com/wp-content/uploads/2016/02/what-is-coding-1024x683.jpg);
     background-repeat: no-repeat;
     background-size: 80% 300px;
     color: black;
     text-align: right;
-    background-color: yellowgreen;
-    
+    background-color: yellowgreen; 
   }
   
   /* Style the top navigation bar */
@@ -49,7 +48,7 @@
   /* Create two unequal columns that sits next to each other */
   /* Sidebar/left column */
   .side {
-    background-color: #f1f1f1;
+    background-color: rgb(236, 236, 236);
     padding: 20px;
     flex-basis: 30%;
   }
@@ -82,19 +81,7 @@
     resize: none;
     width: 100%;
     height: 200px;
-}
-  
-  /* Footer */
-  .footer {
-    padding: 20px;
-    text-align: right;
-    background-image: url(https://www.computersciencedegreehub.com/wp-content/uploads/2016/02/what-is-coding-1024x683.jpg);
-    background-repeat: no-repeat;
-    background-size: 80% 300px;
-    color: black;
-    background-color: yellowgreen;
-  }
-  
+} 
   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 700px) {
     .row, .navbar {   
